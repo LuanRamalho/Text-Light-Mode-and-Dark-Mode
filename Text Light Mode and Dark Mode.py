@@ -48,14 +48,16 @@ class LightDarkApp:
             # Modo escuro
             self.root.configure(bg="#15181f")
             self.container.configure(bg="#15181f")
+            self.toggle_button.configure(bg="#15181f")
             self.toggle_button.itemconfig(self.toggle_bg, fill="white")  # fundo branco
             self.toggle_button.itemconfig(self.toggle_circle, fill="black")  # círculo preto
-            self.toggle_button.coords(self.toggle_circle, 40, 5, 70, 35)  # círculo à direita
+            self.toggle_button.coords(self.toggle_circle, 35, 5, 65, 35)  # círculo à direita
             self.text_label.configure(bg="#15181f", fg="#e5e5e5")
         else:
             # Modo claro
             self.root.configure(bg="white")
             self.container.configure(bg="white")
+            self.toggle_button.configure(bg="white")
             self.toggle_button.itemconfig(self.toggle_bg, fill="black")  # fundo preto
             self.toggle_button.itemconfig(self.toggle_circle, fill="white")  # círculo branco
             self.toggle_button.coords(self.toggle_circle, 5, 5, 35, 35)  # círculo à esquerda
